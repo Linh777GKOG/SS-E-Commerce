@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^2.30.3",
-    "@sanity/core": "^0.139.3",
+    "@sanity/core": "^2.30.3",
     "@sanity/default-layout": "^2.30.3",
     "@sanity/default-login": "^2.30.3",
     "@sanity/desk-tool": "^2.30.3",
@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
-    "@babel/preset-react": "^7.18.6"
+    "@babel/preset-react": "^7.18.6",
+    "babel-eslint": "^10.1.0",
+    "chokidar": "^3.5.3"
   }
 }
