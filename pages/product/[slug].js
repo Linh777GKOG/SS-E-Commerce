@@ -5,6 +5,7 @@ import {
   AiFillStar,
   AiOutlineStar,
 } from 'react-icons/ai';
+
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
@@ -16,8 +17,10 @@ const ProductDetails = ({ product, products }) => {
 
   const handleBuyNow = () => {
     onAdd(product, qty);
+
     setShowCart(true);
   };
+
   return (
     <div>
       <div className="product-detail-container">
@@ -41,6 +44,7 @@ const ProductDetails = ({ product, products }) => {
             ))}
           </div>
         </div>
+
         <div className="product-detail-desc">
           <h1>{name}</h1>
           <div className="reviews">
@@ -57,7 +61,7 @@ const ProductDetails = ({ product, products }) => {
           <p>{details}</p>
           <p className="price">${price}</p>
           <div className="quantity">
-            <h3>Quanity:</h3>
+            <h3>Quantity:</h3>
             <p className="quantity-desc">
               <span className="minus" onClick={decQty}>
                 <AiOutlineMinus />
@@ -68,7 +72,6 @@ const ProductDetails = ({ product, products }) => {
               </span>
             </p>
           </div>
-
           <div className="buttons">
             <button
               type="button"
@@ -100,10 +103,11 @@ const ProductDetails = ({ product, products }) => {
 
 export const getStaticPaths = async () => {
   const query = `*[_type == "product"] {
-        slug {
-            current
-        }
-    }`;
+    slug {
+      current
+    }
+  }
+  `;
 
   const products = await client.fetch(query);
 
@@ -122,6 +126,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { slug } }) => {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
   const productsQuery = '*[_type == "product"]';
+
   const product = await client.fetch(query);
   const products = await client.fetch(productsQuery);
 
