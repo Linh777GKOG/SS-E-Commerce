@@ -1,3 +1,8 @@
 ## Modern Full Stack ECommerce Application with Stripe & Sanity
 
-![Image](https://user-images.githubusercontent.com/70088342/160780701-7bb38a57-76bd-49a2-a4ec-49f89c50a7c7.png)
+![Image](https://raw.githubusercontent.com/Linh777GKOG/SS-E-Commerce/master/public/headphone.PNG)
+![Image](https://raw.githubusercontent.com/Linh777GKOG/SS-E-Commerce/master/public/Ecommerce.PNG)
+![](https://raw.githubusercontent.com/Linh777GKOG/SS-E-Commerce/master/public/Footer.PNG)
+![](https://raw.githubusercontent.com/Linh777GKOG/SS-E-Commerce/master/public/smartwatch.PNG)
+![](https://raw.githubusercontent.com/Linh777GKOG/SS-E-Commerce/master/public/Payment.PNG)
+![](https://raw.githubusercontent.com/Linh777GKOG/SS-E-Commerce/master/public/Paymentsssss.PNG)
